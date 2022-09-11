@@ -8,7 +8,7 @@ import { TaxCalculatorService } from './services/taxcalculator.service';
 })
 export class AppComponent {
   title = 'Tax Calculator';
-  experienceInYears : number = 10;
+  experienceInYears : number = 0;
   professionId : number = 1;
   locationId : number = 2;
   incomeYear : number = 2019
