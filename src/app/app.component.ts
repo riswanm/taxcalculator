@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TaxCalculatorService } from './services/taxcalculator.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'taxcalculator';
+  title = 'Tax Calculator';
+  experienceInYears : number = 10;
+  professionId : number = 1;
+  locationId : number = 2;
+  incomeYear : number = 2019
+  salaryAfterTax : number = 0;
+
+  constructor(private readonly taxCalculatorService: TaxCalculatorService){
+
+  }
+
+  onCalculateSalary(){
+    this.salaryAfterTax = this.taxCalculatorService.getSalaryAfterTax(this.professionId,this.experienceInYears,this.locationId, this.incomeYear)
+  }
+
 }
