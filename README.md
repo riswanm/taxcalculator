@@ -24,7 +24,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Other Considerations
 
-[ ] Google Material fonts are used for icons
-[ ] Calculation logic is written in two approaches as described in the code file itself
-[ ] The cover image is downloaded from the internet
+[] Google Material fonts are used for icons
+[] Calculation logic is written in two approaches as described in the code file itself
+[] The cover image is downloaded from the internet
 
